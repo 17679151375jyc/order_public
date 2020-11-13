@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2202104_e4g5mty3kjw.css">
+    <link href="./favicon.ico" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="./css/order.css">
+    <title>JYCYL微商订单填报</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <form id="formL">
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont iconhuopinmingcheng icon_css" style="color:#5BBEFB"></i>
+                <label class="title_css">货品名称：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="goodsName" value="" type="text" class="input_css" placeholder="请输入货品名称">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont iconxinghao icon_css" style="color:#FDBF30"></i>
+                <label class="title_css">货品型号：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="modelName" value="" type="text" class="input_css" placeholder="请输入货品型号">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont iconhuopinguige icon_css" style="color:#30FD74"></i>
+                <label class="title_css">货品规格：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="specifications" value="" type="text" class="input_css" placeholder="请输入规格">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont iconshuliang icon_css" style="color:#AF30FD"></i>
+                <label class="title_css">发货数量：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="goodsNum" style="width:52vw" value="" type="number" class="input_css" placeholder="请输入发货数量">
+                <span style="margin-left:2vw">件</span>
+                
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont iconprice icon_css" style="color:#FD30DF"></i>
+                <label class="title_css">接单价格：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="goodsPrice" value="" type="text" class="input_css" placeholder="请输入接单价格">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont icongerenmingpian icon_css" style="color:#FD307C"></i>
+                <label class="title_css">接单人姓名：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="name" value="" type="text" class="input_css" placeholder="请输入接单人姓名">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont icondianhua icon_css" style="color:#EBFD30"></i>
+                <label class="title_css">接单人电话：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="phone" value="" type="text" class="input_css" placeholder="请输入接单人电话">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont icongerenmingpian icon_css" style="color:#3084FD"></i>
+                <label class="title_css">收货人：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="takeName" value="" type="text" class="input_css" placeholder="请输入收货人">
+            </div>
+        </div>        
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont icondianhua icon_css" style="color: #30FDEB"></i>
+                <label class="title_css">收货人电话：</label>
+            </div>
+            <div class="div_right_css">
+                <input id="takePhone" value="" type="text" class="input_css" placeholder="请输入收货人电话">
+            </div>
+        </div>
+        <div class="box_css dis_row_between_center">
+            <div class="div_left_css">
+                <i class="iconfont icondizhi icon_css" style="color:#5830FD"></i>
+                <label class="title_css">收货人地址：</label>
+            </div>
+            <div class="div_right_css">
+                <textarea maxlength="50" id="takeAddress" value="" class="textarea_css" placeholder="请输入收货人具体地址"></textarea>
+            </div>
+        </div>
+        <div class="box_css dis_row_center_center">
+            <botton rows="8" class="but_css" onclick="submit()" value="Submit">提交</botton>
+        </div>
+    </form>
+</body>
+<script src="./js/order.js"></script>
+
+</html>
